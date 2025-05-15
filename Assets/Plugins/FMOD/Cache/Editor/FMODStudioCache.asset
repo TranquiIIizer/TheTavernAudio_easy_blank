@@ -188,7 +188,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638828996927995152
+  lastModified: 638829029270734504
   FileSizes:
   - Name: Desktop
     Value: 5842208
@@ -272,7 +272,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5613071062381220269}
   cacheVersion: 131847
-  cacheTime: 638829001438301945
+  cacheTime: 638829029270734504
   SerializableEventsDict:
   - key: event:/Ambient/tavern
     index: 0
