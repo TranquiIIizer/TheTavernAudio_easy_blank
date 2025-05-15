@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{fd2d3495-dfe9-4004-9e64-82a7de2f7793}">
+		<property name="assetPath">
+			<value>Fire Burning Loop 03.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>80</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{81b9d72b-dfe4-49d4-b4e4-de80e9b5986b}</destination>
+		</relationship>
+	</object>
+</objects>
