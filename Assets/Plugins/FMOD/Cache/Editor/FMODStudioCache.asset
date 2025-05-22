@@ -168,7 +168,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638828996939018467
+  lastModified: 638835065249571878
   FileSizes:
   - Name: Desktop
     Value: 105792
@@ -272,7 +272,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5613071062381220269}
   cacheVersion: 131847
-  cacheTime: 638829029270734504
+  cacheTime: 638835065249571878
   SerializableEventsDict:
   - key: event:/Ambient/tavern
     index: 0

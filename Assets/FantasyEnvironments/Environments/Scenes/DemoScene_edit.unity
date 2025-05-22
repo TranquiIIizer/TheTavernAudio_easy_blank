@@ -651,6 +651,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 199009197791819176, guid: cb181bc6c302bca40929333077286a04, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2644,6 +2648,7 @@ GameObject:
   - component: {fileID: 613997993}
   - component: {fileID: 613997990}
   - component: {fileID: 613997989}
+  - component: {fileID: 613997994}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2813,6 +2818,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &613997994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613997984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5662db7a78ed10944a62b27bb1056215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsEvent:
+    Guid:
+      Data1: 1858304803
+      Data2: 1204954191
+      Data3: 135696513
+      Data4: 696479987
+    Path: event:/Footsteps/footsteps
+  jumpEvent:
+    Guid:
+      Data1: 32508053
+      Data2: 1123413050
+      Data3: -701546108
+      Data4: -1709538100
+    Path: event:/Footsteps/jumpLand
+  landEvent:
+    Guid:
+      Data1: 32508053
+      Data2: 1123413050
+      Data3: -701546108
+      Data4: -1709538100
+    Path: event:/Footsteps/jumpLand
 --- !u!1 &657529023
 GameObject:
   m_ObjectHideFlags: 0
