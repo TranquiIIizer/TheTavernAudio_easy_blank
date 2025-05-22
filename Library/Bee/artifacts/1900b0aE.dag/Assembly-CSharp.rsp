@@ -357,6 +357,7 @@
 -analyzer:"C:/Program Files/Unity 2022.3.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/FantasyEnvironments/Environments/Town/Scripts/Door.cs"
+"Assets/Scripts/FMOD_Commands.cs"
 "Assets/Scripts/FPP_control.cs"
 "Assets/Scripts/Interactor.cs"
 "Assets/Scripts/OldScripts/BedTrigger.cs"
