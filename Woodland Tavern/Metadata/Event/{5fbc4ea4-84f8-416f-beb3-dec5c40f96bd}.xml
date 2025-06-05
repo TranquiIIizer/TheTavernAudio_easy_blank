@@ -54,7 +54,7 @@
 			<destination>{cee77b96-7228-46ca-96a3-b36d70725305}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6487795b-e629-424d-a093-5d14ffb948a6}</destination>
+			<destination>{649f15db-816d-4e73-b4ad-ac0ac65d86f1}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{53ef4690-0a8d-4d9a-97be-b2eb3483a4dc}" />
@@ -88,6 +88,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a8ac4cad-0035-4ba0-a114-c39f179781a5}">
+		<relationship name="modulators">
+			<destination>{26288d02-922a-4b02-8da2-3bd3be102be0}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{0a292d87-5f09-4de0-ac8d-6a46cf3b5191}</destination>
 		</relationship>
@@ -198,6 +201,20 @@
 		<relationship name="output">
 			<destination>{a8ac4cad-0035-4ba0-a114-c39f179781a5}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{26288d02-922a-4b02-8da2-3bd3be102be0}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="sustainValue">
+			<value>-6</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{0a292d87-5f09-4de0-ac8d-6a46cf3b5191}">
 		<relationship name="effects">

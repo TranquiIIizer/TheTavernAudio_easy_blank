@@ -53,7 +53,7 @@
 			<destination>{fcaa78b3-010a-46ee-9e46-f0edd6968f41}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6487795b-e629-424d-a093-5d14ffb948a6}</destination>
+			<destination>{649f15db-816d-4e73-b4ad-ac0ac65d86f1}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{67fea281-b67a-44d1-b491-ea0cec7b34a9}" />
@@ -75,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{949dfbf8-4567-4400-a449-fb5ed458025f}">
+		<relationship name="modulators">
+			<destination>{688de11e-215f-42e8-bcf3-5f913b0ae3e4}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{f95ef65f-b466-438a-9d06-f48c785ad642}</destination>
 		</relationship>
@@ -93,7 +96,7 @@
 	<object class="MixerBusPanner" id="{fcaa78b3-010a-46ee-9e46-f0edd6968f41}" />
 	<object class="SingleSound" id="{1c66cbfc-32c4-4339-b878-a261412be68e}">
 		<property name="length">
-			<value>207.609375</value>
+			<value>114</value>
 		</property>
 		<property name="startOffset">
 			<value>45</value>
@@ -133,9 +136,25 @@
 			<destination>{6a2a7d2a-0aca-4972-8f87-101aae507b8b}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{688de11e-215f-42e8-bcf3-5f913b0ae3e4}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="sustainValue">
+			<value>-6</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{f95ef65f-b466-438a-9d06-f48c785ad642}">
 		<relationship name="effects">
 			<destination>{3c58af71-5495-421d-a5d6-22ec2e2db189}</destination>
+			<destination>{16164249-12c7-4fc7-9b33-21a22017ec69}</destination>
+			<destination>{604e6f46-a7bf-4b6e-a1af-61dfb0d425b3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a177d6e2-cb15-4053-8094-43ffecd9d1f1}" />
@@ -156,6 +175,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{afac086d-aee5-40fc-a152-399ebce5b538}" />
 	<object class="MixerBusFader" id="{3c58af71-5495-421d-a5d6-22ec2e2db189}" />
+	<object class="ThreeEQEffect" id="{16164249-12c7-4fc7-9b33-21a22017ec69}">
+		<property name="highGain">
+			<value>-16</value>
+		</property>
+		<property name="crossoverSlope">
+			<value>2</value>
+		</property>
+	</object>
+	<object class="SpatialiserEffect" id="{604e6f46-a7bf-4b6e-a1af-61dfb0d425b3}" />
 	<object class="MixerBusFader" id="{1b04a25e-c40c-48ce-98f2-554cd19bcce1}" />
 	<object class="SpatialiserEffect" id="{95af4485-2426-44d4-ad6c-5bb06cd08f8d}" />
 </objects>
