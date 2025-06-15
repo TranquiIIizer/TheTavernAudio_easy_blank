@@ -121,7 +121,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638828996938448822
+  lastModified: 638855936379048140
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -222,7 +222,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638847166368129437
+  lastModified: 638855936380142725
   FileSizes:
   - Name: Desktop
     Value: 105792
@@ -242,7 +242,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638847166367634788
+  lastModified: 638855936368193743
   FileSizes:
   - Name: Desktop
     Value: 5843360
@@ -288,7 +288,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638847166367675727
+  lastModified: 638855936368254703
   FileSizes:
   - Name: Desktop
     Value: 3678
@@ -329,7 +329,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5613071062381220269}
   cacheVersion: 131847
-  cacheTime: 638847166368129437
+  cacheTime: 638855936380142725
   SerializableEventsDict:
   - key: event:/Ambient/tavern
     index: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638847166367686324
+  lastModified: 638855936368264713
   FileSizes:
   - Name: Desktop
     Value: 1638
@@ -549,7 +549,7 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638847166367861202
+  lastModified: 638855936379018126
   FileSizes:
   - Name: Desktop
     Value: 976576
