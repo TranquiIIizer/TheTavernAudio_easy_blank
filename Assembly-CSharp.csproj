@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\FPP_control.cs" />
     <Compile Include="Assets\Scripts\OldScripts\Fire_start.cs" />
     <Compile Include="Assets\Scripts\Interactor.cs" />
+    <Compile Include="Assets\Scripts\InsideOutsideSwitcher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

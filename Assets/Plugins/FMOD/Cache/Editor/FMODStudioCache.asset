@@ -80,32 +80,6 @@ MonoBehaviour:
   - open
   - closed
   Exists: 1
---- !u!114 &-6752390004918608926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/jumpLand/isGrounded
-  m_EditorClassIdentifier: 
-  Name: isGrounded
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 4193054702
-    data2: 193169207
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - true
-  - false
-  Exists: 1
 --- !u!114 &-6639603887624504464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,10 +196,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638855936380142725
+  lastModified: 638863985326161301
   FileSizes:
   - Name: Desktop
-    Value: 105792
+    Value: 106848
   Exists: 1
 --- !u!114 &-3642188890705362002
 MonoBehaviour:
@@ -242,36 +216,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638855936368193743
+  lastModified: 638863784503328888
   FileSizes:
   - Name: Desktop
-    Value: 5843360
-  Exists: 1
---- !u!114 &-1572158015539024992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/jumpLand/footSwitcher
-  m_EditorClassIdentifier: 
-  Name: footSwitcher
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2439490695
-    data2: 818131198
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - stone
-  - wood
+    Value: 5843392
   Exists: 1
 --- !u!114 &-1216914420373381298
 MonoBehaviour:
@@ -288,10 +236,36 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638855936368254703
+  lastModified: 638863968353118559
   FileSizes:
   - Name: Desktop
-    Value: 3678
+    Value: 3706
+  Exists: 1
+--- !u!114 &-465785404689545968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/land/isGrounded
+  m_EditorClassIdentifier: 
+  Name: isGrounded
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4193054702
+    data2: 193169207
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - true
+  - false
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -318,18 +292,19 @@ MonoBehaviour:
   - {fileID: -6126039864895451951}
   - {fileID: 4935337145890059275}
   - {fileID: 8937680089522965951}
-  - {fileID: 3417985099200922299}
   - {fileID: 791806614188745042}
   - {fileID: -9024803155535254756}
   - {fileID: -5786487643488455946}
   - {fileID: 7085569537702322570}
+  - {fileID: 7405265063559329376}
+  - {fileID: 2776302936170436383}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1216914420373381298}
   StringsBanks:
   - {fileID: 5613071062381220269}
   cacheVersion: 131847
-  cacheTime: 638855936380142725
+  cacheTime: 638863985326161301
   SerializableEventsDict:
   - key: event:/Ambient/tavern
     index: 0
@@ -341,16 +316,18 @@ MonoBehaviour:
     index: 3
   - key: event:/Footsteps/footsteps
     index: 4
-  - key: event:/Footsteps/jumpLand
-    index: 5
   - key: event:/SFX/doors
-    index: 6
+    index: 5
   - key: snapshot:/Inside Room
-    index: 7
+    index: 6
   - key: snapshot:/Outside
-    index: 8
+    index: 7
   - key: snapshot:/Health
+    index: 8
+  - key: event:/Footsteps/land
     index: 9
+  - key: event:/Footsteps/jump
+    index: 10
 --- !u!114 &791335390126456271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,8 +381,60 @@ MonoBehaviour:
   - {fileID: -7320360379206439294}
   MinDistance: 1
   MaxDistance: 20
-  Length: 750
---- !u!114 &3417985099200922299
+  Length: 1250
+--- !u!114 &1907336850670045873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/land/footSwitcher
+  m_EditorClassIdentifier: 
+  Name: footSwitcher
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2439490695
+    data2: 818131198
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - stone
+  - wood
+  Exists: 1
+--- !u!114 &2767115419639947926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/jump/isGrounded
+  m_EditorClassIdentifier: 
+  Name: isGrounded
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4193054702
+    data2: 193169207
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - true
+  - false
+  Exists: 1
+--- !u!114 &2776302936170436383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -415,9 +444,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/jumpLand
+  m_Name: event:/Footsteps/jump
   m_EditorClassIdentifier: 
-  Path: event:/Footsteps/jumpLand
+  Path: event:/Footsteps/jump
   Guid:
     Data1: 32508053
     Data2: 1123413050
@@ -429,11 +458,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -6752390004918608926}
-  - {fileID: -1572158015539024992}
+  - {fileID: 2767115419639947926}
+  - {fileID: 6200032775223091021}
   MinDistance: 1
   MaxDistance: 20
-  Length: 806
+  Length: 501
 --- !u!114 &4935337145890059275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,10 +505,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638855936368264713
+  lastModified: 638863968353128556
   FileSizes:
   - Name: Desktop
-    Value: 1638
+    Value: 1712
   Exists: 1
 --- !u!114 &6119230823920142303
 MonoBehaviour:
@@ -492,6 +521,32 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/footsteps/footSwitcher
+  m_EditorClassIdentifier: 
+  Name: footSwitcher
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2439490695
+    data2: 818131198
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - stone
+  - wood
+  Exists: 1
+--- !u!114 &6200032775223091021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/jump/footSwitcher
   m_EditorClassIdentifier: 
   Name: footSwitcher
   StudioPath: 
@@ -534,6 +589,35 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &7405265063559329376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/land
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/land
+  Guid:
+    Data1: 40997986
+    Data2: 1075789350
+    Data3: -473164158
+    Data4: 1981121424
+  Banks:
+  - {fileID: -5454123022433952838}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1907336850670045873}
+  - {fileID: -465785404689545968}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 806
 --- !u!114 &7946174127149536481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,10 +633,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638855936379018126
+  lastModified: 638863771111991796
   FileSizes:
   - Name: Desktop
-    Value: 976576
+    Value: 976736
   Exists: 1
 --- !u!114 &8937680089522965951
 MonoBehaviour:

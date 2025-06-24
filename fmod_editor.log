@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001DD6230D498 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001203A704278 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,74 +18,12 @@
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] SystemI::createSound                     : filename = Woodland Tavern/Build/Desktop/Ambient.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001E029B7DBA8, queue head = 000001DF2F4E11B8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001E029B7DBA8
-[LOG] SystemI::createSoundInternal             :     Create name='Woodland Tavern/Build/Desktop/Ambient.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5835680
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7680
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DF5F7E7A98
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Forest Woodland Loop 2', format=5, channels=2, frequency=48000, lengthbytes=501312, lengthpcm=2448000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.037231.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001E029B7DBA8
-[LOG] SoundI::release                          : Forest Woodland Loop 2 (000001DF2F4E1518)
-[LOG] SoundI::release                          :     Forest Woodland Loop 2 (000001DD625DCF88)
-[LOG] SoundI::release                          :     Forest Woodland Loop 2 (000001DF597DDC58)
-[LOG] SoundI::release                          : Easy Going Medieval Tavern - Loop (000001DF2F4E0ED8)
-[LOG] SoundI::release                          :     Easy Going Medieval Tavern - Loop (000001E029B42758)
-[LOG] SoundI::release                          :     Easy Going Medieval Tavern - Loop (000001DF2F4DF8F8)
-[LOG] SoundI::release                          : Forest Woodland Loop 2 (000001E029B7DBA8)
-[LOG] SoundI::release                          :     Forest Woodland Loop 2 (000001DF5ECEB268)
-[LOG] SoundI::release                          :     Forest Woodland Loop 2 (000001DF597DE428)
-[LOG] SoundI::release                          :  (000001DD62A04F68)
-[LOG] SoundI::release                          :     Foot_wood_1 (000001E029B44CD8)
-[LOG] SoundI::release                          :  (000001DF5C6A95A8)
-[LOG] SoundI::release                          :     Foot_wood_2 (000001DD625DD708)
-[LOG] SoundI::release                          :  (000001DD62A05228)
-[LOG] SoundI::release                          :     Foot_wood_3 (000001E029B431D8)
-[LOG] SoundI::release                          :  (000001DF5F442B88)
-[LOG] SoundI::release                          :     Foot_wood_4 (000001DD625DC688)
-[LOG] SoundI::release                          :  (000001DF519862B8)
-[LOG] SoundI::release                          :     Foot_wood_5 (000001DD625DD288)
-[LOG] SoundI::release                          :  (000001DD62A05648)
-[LOG] SoundI::release                          :     Foot_wood_6 (000001E029B43658)
-[LOG] SoundI::release                          :  (000001DD62A04CA8)
-[LOG] SoundI::release                          :     Foot_stone_1 (000001E029B41558)
-[LOG] SoundI::release                          :  (000001DD62A050C8)
-[LOG] SoundI::release                          :     Foot_stone_2 (000001E029B44E58)
-[LOG] SoundI::release                          :  (000001DD62A04E08)
-[LOG] SoundI::release                          :     Foot_stone_3 (000001E029B41E58)
-[LOG] SoundI::release                          :  (000001DD62A05A68)
-[LOG] SoundI::release                          :     Foot_stone_4 (000001E029B422D8)
-[LOG] SoundI::release                          :  (000001DF5C6A9448)
-[LOG] SoundI::release                          :     Foot_stone_5 (000001DD625DC988)
-[LOG] SoundI::release                          :  (000001DD62A054E8)
-[LOG] SoundI::release                          :     Foot_stone_6 (000001E029B425D8)
-[LOG] SoundI::release                          :  (000001DD62A057A8)
-[LOG] SoundI::release                          :     Foot_wood_jump (000001E029B41258)
-[LOG] SoundI::release                          :  (000001DD62A05388)
-[LOG] SoundI::release                          :     Foot_stone_jump (000001DD625DD108)
-[LOG] SoundI::release                          :  (000001DD62A05908)
-[LOG] SoundI::release                          :     Foot_stone_land (000001DD625DD888)
-[LOG] SoundI::release                          :  (000001DF5F4428C8)
-[LOG] SoundI::release                          :     Foot_wood_land (000001DD625DD408)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::closeInternal                   : Closed.

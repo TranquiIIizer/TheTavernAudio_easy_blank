@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{8d192ff6-b36a-47a1-a39a-b4a8b52bca96}">
+		<property name="name">
+			<value>fireLoudness</value>
+		</property>
+		<relationship name="folder">
+			<destination>{992b9555-2da3-4893-95da-1f98c967ee75}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a33f5a88-2f51-43d3-bc3c-9e2697879301}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a33f5a88-2f51-43d3-bc3c-9e2697879301}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -37,7 +37,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-12</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{649f15db-816d-4e73-b4ad-ac0ac65d86f1}</destination>
@@ -48,11 +48,8 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-12</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{234ec8fc-40f9-4d1b-9d52-66f0a35f2773}</destination>
-		</relationship>
 		<relationship name="automatableObject">
 			<destination>{476da23a-30d0-498f-b3ac-e1fc9ed6ff73}</destination>
 		</relationship>
@@ -66,16 +63,5 @@
 		<relationship name="mixerStrip">
 			<destination>{476da23a-30d0-498f-b3ac-e1fc9ed6ff73}</destination>
 		</relationship>
-	</object>
-	<object class="ADSRModulator" id="{234ec8fc-40f9-4d1b-9d52-66f0a35f2773}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>value</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
 	</object>
 </objects>

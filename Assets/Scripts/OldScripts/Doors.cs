@@ -10,6 +10,7 @@ public class Doors : MonoBehaviour, IInteractable
     public float rotationSpeed = 90f; // Degrees per second
     bool doorsOpened = true;
     bool isRotating = false;
+    [SerializeField] RoomAmbient roomAmbient;
 
     ////////////////// FMOD Section ///////////////////
 
@@ -71,35 +72,37 @@ public class Doors : MonoBehaviour, IInteractable
 
     void PlaySound()
     {
-        if (doorsOpened == true)
-        {            
-            DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
-            DoorsSound.setParameterByNameWithLabel("Doors", "Close");
+        DoorsSound = FMODUnity.RuntimeManager.CreateInstance(DoorsEvent);
+        if (doorsOpened)
+        {          
+            Debug.Log("Doors opened");
+            DoorsSound.setParameterByNameWithLabel("doors_status", "closed");
             DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
             DoorsSound.start();
             //FMODUnity.RuntimeManager.PlayOneShot(DoorsEvent);
         }
         else
         {
-            DoorsSound.setParameterByNameWithLabel("Doors", "Open");
+            Debug.Log("Doors closed");
+            DoorsSound.setParameterByNameWithLabel("doors_status", "open");
+            DoorsSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
             DoorsSound.start();
-            DoorsSound.release();
         }
+        DoorsSound.release();
     }
 
     void RoomsSnap()
     {
-        RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
-
-        if (roomAmbient.ambientActivated == true && doorsOpened == false)
+        Debug.Log(roomAmbient.name);
+        if (roomAmbient.ambientActivated && doorsOpened == false)
         {
             Debug.Log("im in!");
-            InsideRoom = FMODUnity.RuntimeManager.CreateInstance(insideRoomSnap);
+            InsideRoom = RuntimeManager.CreateInstance(insideRoomSnap);
             InsideRoom.start();
         }
         else
         {
-            if (roomAmbient.ambientActivated == true && doorsOpened == true)
+            if (roomAmbient.ambientActivated && doorsOpened)
             {
                 Debug.Log("it works");
                 InsideRoom.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

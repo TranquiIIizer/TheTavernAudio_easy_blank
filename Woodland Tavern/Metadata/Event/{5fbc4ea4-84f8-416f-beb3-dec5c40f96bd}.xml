@@ -47,6 +47,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{be7709a4-dae5-41ef-bdef-4d2fd43d58b9}">
+		<relationship name="masters">
+			<destination>{4efd7b3d-3801-4286-a4ee-fdd0ce92c79e}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{b6cb4d18-e461-4929-9c49-04621dadaf54}</destination>
 		</relationship>
@@ -208,6 +211,9 @@
 		</property>
 		<property name="initialValue">
 			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>380</value>
 		</property>
 		<property name="sustainValue">
 			<value>-6</value>

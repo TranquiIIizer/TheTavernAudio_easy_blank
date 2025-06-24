@@ -178,53 +178,57 @@ public class Footsteps : MonoBehaviour
 
     private void PlayLanding()
     {
-        if (IsGrounded() && isGrounded == false)
-        {
-            if (isJumping == true)
+        if (isJumping)
+        { 
+            Debug.Log("Jumping");
+            LandSound = FMODUnity.RuntimeManager.CreateInstance(landEvent);
+            RaycastHit hit;
+
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
             {
-                LandSound = FMODUnity.RuntimeManager.CreateInstance(landEvent);
-                RaycastHit hit;
-
-                if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
-                {
-                    //Debug.Log("Hit object tag: " + hit.collider.tag);
-                    if (hit.collider.CompareTag("Stone"))
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
-                        LandSound.start();
-                    }
-                    else if (hit.collider.CompareTag("Wood"))
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "wood");
-                        LandSound.start();
-                    }
-                    else if (hit.collider.CompareTag("Inside_stone"))
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
-                        LandSound.start();
-                    }
-                    else if (hit.collider.CompareTag("Inside_wood"))
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "wood");
-                        LandSound.start();
-                    }
-                    else if (hit.collider.CompareTag("Bed"))
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "bed");
-                        LandSound.start();
-                    }
-                    else
-                    {
-                        LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
-                        LandSound.start();
-                    }
+                //Debug.Log("Hit object tag: " + hit.collider.tag);
+                if (hit.collider.CompareTag("Stone"))
+                { 
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
                 }
+                else if (hit.collider.CompareTag("Wood"))
+                {
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "wood");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
+                }
+                else if (hit.collider.CompareTag("Inside_stone"))
+                {
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
+                }
+                else if (hit.collider.CompareTag("Inside_wood"))
+                {
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "wood");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
+                }
+                else if (hit.collider.CompareTag("Bed"))
+                {
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "bed");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
+                }
+                else
+                {
+                    LandSound.setParameterByNameWithLabel("footSwitcher", "stone");
+                    LandSound.setParameterByName("isGrounded", 1f);
+                    LandSound.start();
+                }
+            }
 
-                LandSound.release();
-                isGrounded = true;
-                isJumping = false;                
-            }           
-        }
+            LandSound.release();
+            isGrounded = true;
+            isJumping = false;                
+        }           
     }
 
     bool IsGrounded()
