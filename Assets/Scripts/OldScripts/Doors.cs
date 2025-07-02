@@ -129,6 +129,3 @@ public class Doors : MonoBehaviour, IInteractable
         }
     }
 }
-
-
-
