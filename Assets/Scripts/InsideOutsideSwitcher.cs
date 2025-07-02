@@ -7,11 +7,14 @@ using FMOD.Studio;
 public class InsideOutsideSwitcher : MonoBehaviour
 {
     private FMOD.Studio.VCA outsideVCA;
+    private FMOD.Studio.VCA insideVCA;
     float distanceToGround;
     private void Start()
     {
         distanceToGround = GetComponent<Collider>().bounds.extents.y;
         outsideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Outside");
+        insideVCA = FMODUnity.RuntimeManager.GetVCA("vca:/Inside");
+        insideVCA.setVolume(1f);
         StartCoroutine(CheckIfOutside());
     }
 
@@ -28,11 +31,13 @@ public class InsideOutsideSwitcher : MonoBehaviour
                 {
                     Debug.Log("Outside");
                     outsideVCA.setVolume(0.25f);
+                    insideVCA.setVolume(1f);
                 }
                 else
                 {
                     Debug.Log("Inside");
                     outsideVCA.setVolume(1f);
+                    insideVCA.setVolume(0f);
                 }
             }
         }
