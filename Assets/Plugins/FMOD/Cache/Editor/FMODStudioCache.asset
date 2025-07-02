@@ -51,8 +51,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 50
   Length: 114000
 --- !u!114 &-7320360379206439294
 MonoBehaviour:
@@ -121,7 +121,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -3642188890705362002}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -216,10 +216,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638863784503328888
+  lastModified: 638870586380458748
   FileSizes:
   - Name: Desktop
-    Value: 5843392
+    Value: 5844288
   Exists: 1
 --- !u!114 &-1216914420373381298
 MonoBehaviour:
@@ -304,7 +304,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5613071062381220269}
   cacheVersion: 131847
-  cacheTime: 638864838792240811
+  cacheTime: 638870586380458748
   SerializableEventsDict:
   - key: event:/Ambient/tavern
     index: 0
@@ -633,10 +633,10 @@ MonoBehaviour:
   Path: Woodland Tavern/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638863771111991796
+  lastModified: 638870583925815220
   FileSizes:
   - Name: Desktop
-    Value: 976736
+    Value: 977024
   Exists: 1
 --- !u!114 &8937680089522965951
 MonoBehaviour:

@@ -966,8 +966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 0}
+  nonRigidbodyVelocity: 1
+  attenuationObject: {fileID: 613997984}
 --- !u!114 &237163392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,7 +1476,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5122613170271922422, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
   m_PrefabInstance: {fileID: 7522821091163648382}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &338748283
+--- !u!114 &338748287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1485,37 +1485,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 338748276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9851f7a55ac424b8a88ba3bf7ec135, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireplaceEvent:
+  CollisionTag: 
+  EventReference:
     Guid:
       Data1: 1606176420
       Data2: 1097827576
       Data3: -975260738
       Data4: -1114239036
     Path: event:/Ambient/fire
---- !u!135 &338748284
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338748276}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 71.9
-  m_Center: {x: -0.2890482, y: 0.22538668, z: 12.422356}
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 8
 --- !u!1 &339217675
 GameObject:
   m_ObjectHideFlags: 0
@@ -7155,9 +7146,9 @@ MonoBehaviour:
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 30
 --- !u!4 &1839302999
 Transform:
   m_ObjectHideFlags: 0
@@ -7167,7 +7158,7 @@ Transform:
   m_GameObject: {fileID: 1839302997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400.39526, y: 8.038361, z: 315.5216}
+  m_LocalPosition: {x: 400.39526, y: 11, z: 316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8569,7 +8560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4907164302123490770, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.380365
+      value: 6.2783647
       objectReference: {fileID: 0}
     - target: {fileID: 4907164302123490770, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8617,10 +8608,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5122613170271922422, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 338748283}
-    - targetCorrespondingSourceObject: {fileID: 5122613170271922422, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 338748284}
+      addedObject: {fileID: 338748287}
   m_SourcePrefab: {fileID: 100100000, guid: 63346a7448404644da8be8ff0a98a82b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

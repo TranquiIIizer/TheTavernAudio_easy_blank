@@ -144,7 +144,11 @@
 			<destination>{7834a84c-41bf-4e18-bc53-42e6e090eaf8}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{db47c849-e80c-4595-a5e4-fc66545603f1}" />
+	<object class="MixerBusPanner" id="{db47c849-e80c-4595-a5e4-fc66545603f1}">
+		<property name="surroundPanExtent">
+			<value>90</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ba7c51fc-a781-417a-8c23-7fbe5fd911c2}" />
 	<object class="GainEffect" id="{97191d7e-68fe-403e-a966-8a68fef86bd3}">
 		<property name="gain">
@@ -152,5 +156,21 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{33c5e373-5114-40ae-828b-218ccd8d3372}" />
-	<object class="SpatialiserEffect" id="{7834a84c-41bf-4e18-bc53-42e6e090eaf8}" />
+	<object class="SpatialiserEffect" id="{7834a84c-41bf-4e18-bc53-42e6e090eaf8}">
+		<property name="minimumDistance">
+			<value>6.4000001</value>
+		</property>
+		<property name="maximumDistance">
+			<value>96.5</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="soundSize">
+			<value>6.5</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>70</value>
+		</property>
+	</object>
 </objects>

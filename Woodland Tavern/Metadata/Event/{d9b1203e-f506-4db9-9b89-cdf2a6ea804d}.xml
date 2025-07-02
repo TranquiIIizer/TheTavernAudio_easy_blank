@@ -59,7 +59,14 @@
 			<destination>{649f15db-816d-4e73-b4ad-ac0ac65d86f1}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{67fea281-b67a-44d1-b491-ea0cec7b34a9}" />
+	<object class="EventAutomatableProperties" id="{67fea281-b67a-44d1-b491-ea0cec7b34a9}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>50</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{6a2a7d2a-0aca-4972-8f87-101aae507b8b}" />
 	<object class="GroupTrack" id="{60879849-4099-4bb7-a2d6-3a142ebda29d}">
 		<relationship name="modules">
@@ -160,7 +167,14 @@
 			<destination>{604e6f46-a7bf-4b6e-a1af-61dfb0d425b3}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{a177d6e2-cb15-4053-8094-43ffecd9d1f1}" />
+	<object class="MixerBusPanner" id="{a177d6e2-cb15-4053-8094-43ffecd9d1f1}">
+		<property name="surroundPanExtent">
+			<value>90</value>
+		</property>
+		<property name="surroundLFELevel">
+			<value>-19.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{24f41fcb-f7d1-4855-afc3-bfd259b72a7c}" />
 	<object class="RandomizerModulator" id="{3fb2c447-5e02-484f-8740-652ca46601e8}">
 		<property name="nameOfPropertyBeingModulated">
@@ -186,7 +200,20 @@
 			<value>2</value>
 		</property>
 	</object>
-	<object class="SpatialiserEffect" id="{604e6f46-a7bf-4b6e-a1af-61dfb0d425b3}" />
+	<object class="SpatialiserEffect" id="{604e6f46-a7bf-4b6e-a1af-61dfb0d425b3}">
+		<property name="minimumDistance">
+			<value>7.5999999</value>
+		</property>
+		<property name="maximumDistance">
+			<value>300</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="soundSize">
+			<value>12.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{1b04a25e-c40c-48ce-98f2-554cd19bcce1}" />
 	<object class="SpatialiserEffect" id="{95af4485-2426-44d4-ad6c-5bb06cd08f8d}" />
 </objects>
